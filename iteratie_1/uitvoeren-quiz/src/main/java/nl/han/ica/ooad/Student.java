@@ -29,10 +29,14 @@ public class Student {
                 antwoorden.add(studentAntwoord);
                 if (huidigeVraag.getVraagnummer() == vraagList.size()) {
                     System.out.println("\nToets afgerond");
-                    afgerond = true;
+                    toetsAfronden();
                 }
             }
         }
+    }
+
+    private void toetsAfronden() {
+        afgerond = true;
     }
 
     private StudentAntwoord antwoordGevenOpVraag(Scanner scanner, Vraag huidigeVraag) {

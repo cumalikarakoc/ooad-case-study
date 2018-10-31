@@ -1,5 +1,8 @@
 package nl.han.ica.ooad;
 
+import nl.han.ica.ooad.strategyPattern.KennistoetsOverzicht;
+import nl.han.ica.ooad.strategyPattern.Overzicht;
+
 import java.util.List;
 
 public class Uitvoering {
@@ -7,7 +10,7 @@ public class Uitvoering {
     private boolean afgerond = false;
     private boolean tijdVerstreken = false;
     private Lokaal lokaal;
-    private Overzicht overzicht = new Overzicht();
+    private Overzicht overzicht = new KennistoetsOverzicht();
 
 
     public Uitvoering(Lokaal lokaal, Kennistoets kennistoets) {
